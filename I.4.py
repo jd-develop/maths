@@ -7,9 +7,6 @@ def f(x):
     return ((2 * x) ** 2 - 12 * x) + 20
 
 
-# number = float(input("Entrez un nombre : "))
-# print(f(number))
-
 turtle.up()
 turtle.goto(-500, -200)
 turtle.down()
