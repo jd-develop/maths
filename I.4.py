@@ -11,8 +11,7 @@ def f(x):
 # print(f(number))
 
 turtle.up()
-number = -10
-turtle.goto(-500, -100)
+turtle.goto(-500, -200)
 turtle.down()
 turtle.forward(1000)
 turtle.up()
@@ -21,11 +20,13 @@ turtle.left(90)
 turtle.down()
 turtle.forward(1000)
 turtle.up()
-for loop in range(31):
+
+number = -15
+for loop in range(121):
     print("f({}) = ".format(number), f(number))
-    turtle.goto(number, f(number) - 100)
+    turtle.goto(number * 4, f(number) - 200)
     turtle.down()
-    number += 1
+    number += 0.25
 
 print("Terminé, cliquez pour quitter.")
 turtle.exitonclick()
