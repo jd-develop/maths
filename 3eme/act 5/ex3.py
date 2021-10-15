@@ -3,7 +3,7 @@
 import math
 
 
-def primalité(n):
+def primalite(n):
     diviseur = 2
     while diviseur <= math.sqrt(n):
         if (n % diviseur) == 0:
@@ -15,7 +15,7 @@ def primalité(n):
 
 number = 10000
 test = False
-while test == False:
+while not test:
     number += 1
-    test = primalité(number)
+    test = primalite(number)
 print(number)
