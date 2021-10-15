@@ -78,18 +78,21 @@ def moy(a, b):
 
 
 print("question 1")
-nombre1, nombre2 = eval(input("Entrer deux nombres non nuls séparés d'une virgule pour en déterminer leur moyenne : "))
+nombre1, nombre2 = eval(input("Entrer deux nombres non nuls séparés d'une virgule pour déterminer leur moyenne : "))
 print(moy(nombre1, nombre2))
 
 print("question 2")
 
 
 def harmo(x, y):
+    """
+        Moyenne harmonique
+    """
     a = moy(1/x, 1/y)
     b = 1/a
     return b
 
 
-nombre1, nombre2 = eval(input("Entrer deux nombres non nuls séparés d'une virgule pour en déterminer l'inverse de la"
-                              " moyenne de leurs inverses : "))
+nombre1, nombre2 = eval(input("Entrer deux nombres non nuls séparés d'une virgule pour déterminer leur moyenne "
+                              "harmonique : "))
 print(harmo(nombre1, nombre2))
