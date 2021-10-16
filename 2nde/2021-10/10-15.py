@@ -47,6 +47,6 @@ def nenuphar(a, a_max):
     return h
 
 
-aire = eval(input("Aire de départ du nénuphar en m² : "))  # 5e-4
+aire = eval(input("Aire de départ du nénuphar en m² (entrer 5e-4 pour 5 cm² par exemple): "))  # 5e-4
 aire_max = eval(input("Aire max du nénuphar en m² : "))  # 10
 print(nenuphar(aire, aire_max))
