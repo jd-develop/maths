@@ -27,7 +27,7 @@ def f(x):
     return -(x ** 3) + 2*(x ** 2) + 3*x + 1
 
 
-Xlist = plt.np.arange(-1, 5, 10e-3)
+Xlist = plt.np.arange(-1, 6, 10e-3)
 Ylist = [f(x) for x in Xlist]
 plt.plot(Xlist, Ylist)
 plt.grid()
