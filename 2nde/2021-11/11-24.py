@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-# coding:utf-8
+# -*- coding:utf-8 -*-
 # premier nombre n tel que x**n > s
 x, s = eval(input("Entrez x, s avec x>1 : "))
 n, xn = 0, 1

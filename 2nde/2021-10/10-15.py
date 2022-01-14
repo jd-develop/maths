@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-# coding:utf-8
+# -*- coding:utf-8 -*-
 import math
 # -----------------
 # EX 98 P 37
