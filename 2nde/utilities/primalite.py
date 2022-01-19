@@ -25,7 +25,7 @@ def primalite(n, do_i_print: bool = True):
                     # si le diviseur est premier : le reste des cas n'est pas intéressant puisqu'il est compris dans
                     # les nbs premiers (cf. propriété de la décomposition en produits de facteurs premiers)
                     print(n, "est divisible par", div)
-            return False  # il n'est pas premier puisqu'il admet comme diviseur un autre nombre que lui même ou un
+            return False  # il n'est pas premier puisqu'il admet comme diviseur un autre nombre que lui-même ou un
         else:
             if do_i_print:
                 if primalite(div, False):
@@ -34,12 +34,12 @@ def primalite(n, do_i_print: bool = True):
     return True  # à la fin s'il n'y a pas eu de return False c'est que le nombre est forcément premier
 
 
-print("Entrez stop pour arrêter le programme")
-stop = "stop"
+print("Entrez stop ou exit pour arrêter le programme")
+stops = ["stop", "exit"]
 while True:
     try:
         nb = eval(input("Entrez nombre pour tester primalité : "))  # on demande une valeur
-        if nb == "stop":  # si l'utilisateur entre 'stop', il va appeler la variable stop, qui contient 'stop'
+        if nb in stops:  # si l'utilisateur entre 'stop', il va appeler la variable 'stops', qui contient les stops
             break
         print(nb, "est premier" if primalite(nb) else "n'est pas premier")  # on affiche le nb puis 'est 1er' s'il l'est
     except Exception as e:
