@@ -4,6 +4,7 @@ import matplotlib.pyplot as plt
 
 
 def maximum(f_, a: int | float, b: int | float, p: int | float):
+    """Maximum de f(x) sur l'intervalle [a, b] avec un pas de p"""
     x, y_max = a, f_(a)
     x += p
     while x <= b:
@@ -14,6 +15,7 @@ def maximum(f_, a: int | float, b: int | float, p: int | float):
 
 
 def minimum(f_, a: int | float, b: int | float, p: int | float):
+    """Minimum de f(x) sur l'intervalle [a, b] avec un pas de p"""
     x, y_min = a, f_(a)
     x += p
     while x <= b:
