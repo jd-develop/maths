@@ -69,21 +69,23 @@ scope = max(values_) - min(values_)
 
 mode = statistics.mode(values_)
 
-print(f"Mean / Moyenne ................................. : {mean}\n")
+print("Mean / Moyenne ".ljust(49, '.') + f" : {mean}\n")
 
-print(f"Harmonic mean / Moyenne harmonique ............. : {harmonic_mean}")
-print(f"Geometric mean / Moyenne géométrique ........... : {geometric_mean}\n")
+print("Harmonic mean / Moyenne harmonique ".ljust(49, '.') + f" : {harmonic_mean}")
+print("Geometric mean / Moyenne géométrique ".ljust(49, '.') + f" : {geometric_mean}\n")
 
-print(f"First quartile / Premier quartile .............. : {first_quartile}")
-print(f"Median / Médiane ............................... : {median}")
-print(f"Third quartile / Troisième quartile ............ : {third_quartile}\n")
+print("First quartile / Premier quartile ".ljust(49, '.') + f" : {first_quartile}")
+print("Median / Médiane ".ljust(49, '.') + f" : {median}")
+print("Third quartile / Troisième quartile ".ljust(49, '.') + f" : {third_quartile}\n")
 
-print(f"Variance ....................................... : {variance}")
-print(f"Standard deviation / Écart-type ................ : {standard_deviation}\n")
+print("Variance ".ljust(49, '.') + f" : {variance}")
+print("Standard deviation / Écart-type ".ljust(49, '.') + f" : {standard_deviation}\n")
 
-print(f"Mean absolute difference / Écart moyen absolu .. : {mean_absolute_difference}")
-print(f"Median absolute difference / Écart médian absolu : {median_absolute_difference}\n")
+print("Mean absolute difference / Écart moyen absolu ".ljust(49, '.') + f" : {mean_absolute_difference}")
+print("Median absolute difference / Écart médian absolu ".ljust(49, '.') + f" : {median_absolute_difference}\n")
 
-print(f"Scope / Étendue ................................ : {scope}\n")
+print("Minimum value / Valeur minimum ".ljust(49, '.') + f" : {min(values_)}")
+print("Maximum value / Valeur maximum ".ljust(49, '.') + f" : {max(values_)}")
+print("Scope / Étendue ".ljust(49, '.') + f" : {scope}\n")
 
-print(f"Mode ........................................... : {mode}")
+print("Mode ".ljust(49, '.') + f" : {mode}")
