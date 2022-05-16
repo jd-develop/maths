@@ -3,6 +3,11 @@
 import math
 import statistics
 
+
+def is_num(value_):
+    return isinstance(value_, int) or isinstance(value_, float)
+
+
 values = []
 coefficients = []
 
@@ -14,9 +19,9 @@ while should_continue:
     if value == 'end':
         break
 
-    while not isinstance(value, int):
+    while not is_num(value):
         try:
-            value = int(value)
+            value = float(value)
         except Exception:
             print("The value must be a number")
             value = input("Enter a value or 'end' to end: ")
@@ -49,6 +54,8 @@ for index, value in enumerate(values):
 values_.sort()
 
 mean = statistics.mean(values_)
+x_sum = sum(values_)
+x_square_sum = sum([v**2 for v in values_])
 
 quartiles = statistics.quantiles(values_, n=4)
 first_quartile = quartiles[0]
@@ -70,6 +77,9 @@ scope = max(values_) - min(values_)
 mode = statistics.mode(values_)
 
 print("Mean / Moyenne ".ljust(49, '.') + f" : {mean}\n")
+
+print("Σx ".ljust(49, '.') + f" : {x_sum}")
+print("Σx² ".ljust(49, '.') + f" : {x_square_sum}\n")
 
 print("Harmonic mean / Moyenne harmonique ".ljust(49, '.') + f" : {harmonic_mean}")
 print("Geometric mean / Moyenne géométrique ".ljust(49, '.') + f" : {geometric_mean}\n")
