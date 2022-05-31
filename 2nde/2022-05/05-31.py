@@ -16,4 +16,4 @@ def rep_chat(n):
 
 
 for _ in range(10):
-    print(rep_chat(100))
+    print(rep_chat(1000))
