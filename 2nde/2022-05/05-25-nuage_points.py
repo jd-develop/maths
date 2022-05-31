@@ -41,4 +41,4 @@ print(simulation(50, 200, .5))
 
 
 # while True:
-#     print(echantillon(*eval(input("n, p : "))))
+#     print(sample(*eval(input("n, p : "))))
