@@ -76,6 +76,18 @@ scope = max(values_) - min(values_)
 
 mode = statistics.mode(values_)
 
+borne_inf = mean - standard_deviation*2
+borne_sup = mean + standard_deviation*2
+
+s = 0
+for value in values_:
+    if borne_inf < value < borne_sup:
+        s += 1
+
+p = s / len(values_)  # proportion de valeurs dans s'intervalle [moy-2*st_dev, moy+2*st_dev]
+
+print("Taille / Length ".ljust(49, '.') + f" : {len(values_)}")
+
 print("Mean / Moyenne ".ljust(49, '.') + f" : {mean}\n")
 
 print("Σx ".ljust(49, '.') + f" : {x_sum}")
@@ -98,4 +110,6 @@ print("Minimum value / Valeur minimum ".ljust(49, '.') + f" : {min(values_)}")
 print("Maximum value / Valeur maximum ".ljust(49, '.') + f" : {max(values_)}")
 print("Scope / Étendue ".ljust(49, '.') + f" : {scope}\n")
 
-print("Mode ".ljust(49, '.') + f" : {mode}")
+print("Mode ".ljust(49, '.') + f" : {mode}\n")
+
+print("p (cf. file comments)".ljust(49, '.') + f" : {p}")
