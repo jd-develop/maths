@@ -84,7 +84,7 @@ for value in values_:
     if borne_inf < value < borne_sup:
         s += 1
 
-p = s / len(values_)  # proportion de valeurs dans s'intervalle [moy-2*st_dev, moy+2*st_dev]
+p = s / len(values_)  # proportion de valeurs dans l'intervalle [moy-2*st_dev, moy+2*st_dev]
 
 print("Taille / Length ".ljust(49, '.') + f" : {len(values_)}")
 

@@ -6,7 +6,7 @@
 """
 
 x = 0
-while not x == 10:
+while x != 10:
     fx = (x - 1) * (x + 1) + 1
     print("f(" + str(x) + ") = " + str(fx))
     x += 1
