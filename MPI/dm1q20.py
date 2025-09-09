@@ -1,7 +1,6 @@
 #!/usr/bin/env python3
 # -*- coding:utf-8 -*-
 
-
 def frac_simple(x: float, accu: list[int], n: int = 3) -> list[int]:
      if n == 0:
          return [*accu]
